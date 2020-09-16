@@ -1,0 +1,179 @@
+body {
+  background: #010203;
+  overflow-x: hidden !important;
+}
+
+@font-face {
+  font-family: "TTComonsBold";
+  src: url(fonts/TTcomons/TTCommons-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "TTComonsDemiBold";
+  src: url(fonts/TTcomons/TTCommons-DemiBold.ttf) format("truetype");
+}
+
+.App {
+  text-align: center;
+  margin: auto 5%;
+}
+
+.navBar {
+  margin-top: 1rem;
+  text-align: left;
+  display: flex;
+
+  h2 {
+    margin-top: 0.45rem;
+    background: -webkit-linear-gradient(#eeeeee, #5e5e5e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 24px rgb(0, 0, 0));
+    font-size: 36px;
+    cursor: pointer;
+    font-family: "TTComonsBold";
+  }
+}
+
+.constructionText {
+  margin-top: 12.5%;
+  margin-left: 10%;
+  text-align: left;
+  h1 {
+    text-align: left;
+    color: #e1e1e1;
+    font-family: "TTComonsBold", sans-serif;
+    margin-bottom: -0.4rem;
+    display: flex;
+  }
+  h2 {
+    text-align: left;
+    color: #e1e1e1;
+    font-family: "TTComonsDemiBold", sans-serif;
+    margin-bottom: -0.1rem;
+  }
+  h3 {
+    text-align: left;
+    font-family: "TTComonsDemiBold";
+    color: #adadad;
+    margin-top: 2rem;
+  }
+  h5 {
+    text-align: left;
+  }
+
+  h6 {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    transform: rotate(-45deg) perspective(0);
+    position: relative;
+  }
+}
+
+.facebookIcon {
+  margin-right: 15px;
+  color: #3b5998 !important;
+  transition: 0.1s ease-in-out;
+}
+
+.instagramIcon {
+  margin-right: 15px;
+  margin-top: 2px;
+  color: #dd2a7b;
+}
+
+.twitterIcon {
+  margin-top: 2px;
+  color: #00acee;
+  margin-right: 19px;
+  cursor: pointer;
+}
+
+.mailIcon {
+  margin-top: 2px;
+  color: rgb(48, 209, 88);
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.UnderConstruction {
+  width: 70%;
+  margin-top: 15%;
+  padding-bottom: 20%;
+  filter: drop-shadow(0px 30px 14px rgb(32, 21, 9));
+}
+
+.stirringPic {
+  display: inline-block;
+  position: relative;
+}
+
+.stirringPic:after {
+  position: absolute;
+  content: "";
+  border-bottom: 7px solid rgb(53, 34, 13);
+  border-radius: 10px;
+  width: 80%;
+  transform: translateX(-93%);
+  bottom: 16.85%;
+}
+
+.footer {
+  margin: 2rem 7.5%;
+  font-family: "TTComonsDemiBold", sans-serif;
+}
+.pageFooter {
+  h4 {
+    text-align: left;
+    color: #adadad;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    color: #8a8a8a;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h6:hover {
+    color: #6c0eff;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+  }
+}
+
+.contactFooter {
+  h4 {
+    color: #adadad;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h5 {
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    color: #8a8a8a;
+    transition: 0.1s ease-in-out;
+    text-align: left;
+  }
+
+  h6:hover {
+    color: #6c0eff;
+    transition: 0.1s ease-in-out;
+  }
+}
+
+.footerIcon {
+  text-align: left;
+  margin-right: 10px;
+
+  font-size: 1.5rem;
+}
