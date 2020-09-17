@@ -245,6 +245,10 @@ body {
   font-size: 1.5rem;
 }
 
+.fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
 @media only screen and (max-width: 792px) {
   .constructionText {
     margin-top: 8%;
@@ -261,5 +265,14 @@ body {
 
   .pageFooter {
     margin-top: 20px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
