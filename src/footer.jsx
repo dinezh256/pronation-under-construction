@@ -3,7 +3,7 @@ import { FaWhatsapp, FaPhoneAlt, FaMapMarker } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="footer fadeIn">
+    <div className="footer fadeIn" style={{ animationDelay: "1s" }}>
       <div className="col">
         <h6 className="bottomDivider"></h6>
       </div>
