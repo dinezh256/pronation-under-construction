@@ -15,7 +15,7 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      <nav className="navBar">
+      <nav className="navBar fadeIn">
         <PronationLogo
           color1="url(#grad1)"
           color2="url(#grad2)"
@@ -34,7 +34,7 @@ function App() {
           />
         </h4>
       </nav>
-      <div className="row">
+      <div className="row fadeIn">
         <div className="col-md constructionText">
           <h2>
             Hello! <strong>👋</strong>
