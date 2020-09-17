@@ -1,13 +1,15 @@
 import React from "react";
-import UnderConstruction from "./maintenance2.png";
-import PronationLogo from "./pronationLogo";
-import Footer from "./footer";
 import {
   FaFacebookSquare,
   FaInstagram,
   FaTwitterSquare,
   FaEnvelopeOpenText,
+  FaExclamationCircle,
 } from "react-icons/fa";
+import { animateScroll } from "react-scroll";
+import UnderConstruction from "./maintenance2.png";
+import PronationLogo from "./pronationLogo";
+import Footer from "./footer";
 import "./App.scss";
 
 function App() {
@@ -17,10 +19,20 @@ function App() {
         <PronationLogo
           color1="url(#grad1)"
           color2="url(#grad2)"
-          height={56}
-          width={56}
+          height={52}
+          width={52}
         />{" "}
-        <h2>ProNation Group</h2>
+        <div>
+          <h2>ProNation</h2>
+          <h3>Group</h3>
+        </div>
+        <h4>
+          <FaExclamationCircle
+            className="envelopeIcon"
+            size={32}
+            onClick={() => animateScroll.scrollToBottom()}
+          />
+        </h4>
       </nav>
       <div className="row">
         <div className="col-md constructionText">
@@ -35,16 +47,16 @@ function App() {
           <h3>Stay in touch</h3>
           <h5>
             <a href="https://www.facebook.com/PronationEvents/">
-              <FaFacebookSquare className="facebookIcon" fontSize={40} />
+              <FaFacebookSquare className="facebookIcon" fontSize={33} />
             </a>
             <a href="https://www.instagram.com/pronation_em/">
-              <FaInstagram className="instagramIcon" fontSize={43} />
+              <FaInstagram className="instagramIcon" fontSize={36} />
             </a>
             <a href="https://twitter.com/EventsPronation">
-              <FaTwitterSquare className="twitterIcon" fontSize={40} />
+              <FaTwitterSquare className="twitterIcon" fontSize={33} />
             </a>
             <a href="mailto:info@pronationevents.com">
-              <FaEnvelopeOpenText className="mailIcon" fontSize={35} />
+              <FaEnvelopeOpenText className="mailIcon" fontSize={28} />
             </a>
           </h5>
         </div>
@@ -52,7 +64,7 @@ function App() {
           <img
             src={UnderConstruction}
             alt="UnderConstruction"
-            className="UnderConstruction"
+            className="underConstruction"
           />
         </div>
       </div>

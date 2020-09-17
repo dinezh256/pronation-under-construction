@@ -22,7 +22,7 @@ const Footer = () => {
             </h6>
 
             <h6>
-              <FaMapMarker size={14} className="footerIcon" />
+              <FaMapMarker size={14} className="mapIcon" />
               &nbsp;35th floor, Office #17, Al Saqr Business Tower, Sheikh Zayed
               Road, Dubai
             </h6>
@@ -31,7 +31,7 @@ const Footer = () => {
             <h4>Legal</h4>
             <h6>Terms</h6>
             <h6>Privacy Policy</h6>
-            <h6>© 2020 ProNation Group</h6>
+            <h6>Copyright ProNation Group - 2020</h6>
           </div>
         </div>
       </div>

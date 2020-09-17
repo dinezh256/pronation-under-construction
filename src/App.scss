@@ -18,26 +18,59 @@ body {
 }
 
 .navBar {
-  margin-top: 1rem;
-  text-align: left;
+  margin-top: 2rem;
   display: flex;
+  flex-direction: row;
 
-  h2 {
-    margin-top: 0.45rem;
+  div > h2 {
+    margin-top: 0.5rem;
+    text-align: left;
     background: -webkit-linear-gradient(#eeeeee, #5e5e5e);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0px 0px 24px rgb(0, 0, 0));
-    font-size: 36px;
+    font-size: 16px;
     cursor: pointer;
     font-family: "TTComonsBold";
   }
+  div > h3 {
+    margin-top: -0.9rem;
+    text-align: center;
+    background: -webkit-linear-gradient(#eeeeee, #5e5e5e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 24px rgb(0, 0, 0));
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: "TTComonsBold";
+  }
+
+  h4 {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    color: #3e257a;
+    font-family: "TTComonsDemiBold";
+    position: absolute;
+    right: 6%;
+  }
+}
+
+.envelopeIcon {
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.envelopeIcon:hover {
+  color: #6c0eff;
+  transition: 0.25s ease-in-out;
 }
 
 .constructionText {
   margin-top: 12.5%;
-  margin-left: 10%;
+  margin-left: 7.5%;
   text-align: left;
   h1 {
     text-align: left;
@@ -57,6 +90,7 @@ body {
     font-family: "TTComonsDemiBold";
     color: #adadad;
     margin-top: 2rem;
+    margin-bottom: -5px;
   }
   h5 {
     text-align: left;
@@ -72,33 +106,57 @@ body {
 }
 
 .facebookIcon {
-  margin-right: 15px;
-  color: #3b5998 !important;
+  margin-right: 10px;
+  color: #294279;
   transition: 0.1s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.facebookIcon:hover {
+  color: #234a9e;
+  transition: 0.25s ease-in-out;
 }
 
 .instagramIcon {
-  margin-right: 15px;
+  margin-right: 10px;
   margin-top: 2px;
-  color: #dd2a7b;
+  color: #c2226a;
+  transition: 0.25s ease-in-out;
+}
+
+.instagramIcon:hover {
+  color: #db1d73;
+  transition: 0.25s ease-in-out;
 }
 
 .twitterIcon {
   margin-top: 2px;
-  color: #00acee;
-  margin-right: 19px;
+  color: #0f93c7;
+  margin-right: 14px;
   cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.twitterIcon:hover {
+  color: #00acee;
+  transition: 0.25s ease-in-out;
 }
 
 .mailIcon {
   margin-top: 2px;
-  color: rgb(48, 209, 88);
+  color: rgb(41, 173, 74);
   margin-right: 15px;
   cursor: pointer;
+  transition: 0.25s ease-in-out;
 }
 
-.UnderConstruction {
-  width: 70%;
+.mailIcon:hover {
+  color: rgb(48, 209, 88);
+  transition: 0.25s ease-in-out;
+}
+
+.underConstruction {
+  width: 75%;
   margin-top: 15%;
   padding-bottom: 20%;
   filter: drop-shadow(0px 30px 14px rgb(32, 21, 9));
@@ -116,13 +174,14 @@ body {
   border-radius: 10px;
   width: 80%;
   transform: translateX(-93%);
-  bottom: 16.85%;
+  bottom: 16.4%;
 }
 
 .footer {
-  margin: 2rem 7.5%;
+  margin: 2rem 2.5%;
   font-family: "TTComonsDemiBold", sans-serif;
 }
+
 .pageFooter {
   h4 {
     text-align: left;
@@ -137,6 +196,7 @@ body {
     transition: 0.3s ease-in-out;
     text-align: left;
     text-transform: uppercase;
+    margin-bottom: 0px;
   }
 
   h6:hover {
@@ -163,6 +223,7 @@ body {
     color: #8a8a8a;
     transition: 0.1s ease-in-out;
     text-align: left;
+    margin-bottom: 0px;
   }
 
   h6:hover {
@@ -173,7 +234,32 @@ body {
 
 .footerIcon {
   text-align: left;
-  margin-right: 10px;
-
+  margin-right: 5px;
   font-size: 1.5rem;
+}
+
+.mapIcon {
+  text-align: left;
+  margin-left: 1.5px;
+  margin-right: 3px;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 792px) {
+  .constructionText {
+    margin-top: 8%;
+    margin-left: 1.5%;
+  }
+
+  .underConstruction {
+    margin-top: 10%;
+  }
+
+  .footer {
+    margin: 2rem -1%;
+  }
+
+  .pageFooter {
+    margin-top: 20px;
+  }
 }
